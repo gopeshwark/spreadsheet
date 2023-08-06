@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.page-action-container{
+    height: 3rem;
+    background-color: aquamarine  ;
+}
+
+.cell-action-container{
+    height: 3rem;
+    background-color: bisque;
+}
+
+.formula-action-container{
+    height: 2rem;
+    background-color: antiquewhite;
+}
+
+.sheet-action-container{
+    height: 3rem;
+    background-color: rgb(119, 124, 124);
+}
+
+.grid-container{
+    height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+}
