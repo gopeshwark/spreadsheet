@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speadsheet</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <div class="page-action-container">
         <div class="page-action">Home</div>
@@ -14,10 +17,71 @@
         <div class="page-action">Layout</div>
         <div class="page-action">Help</div>
     </div>
-    <div class="cell-action-container"></div>
-    <div class="formula-action-container"></div>
+    <div class="cell-action-container">
+        <span class="material-icons">
+            content_copy
+        </span>
+        <span class="material-icons">
+            content_cut
+        </span>
+        <span class="material-icons">
+            content_paste
+        </span>
+        <select>
+            <option value="arial">Arial</option>
+            <option value="times new roman">Times New Roman</option>
+            <option value="cambria">Cambria</option>
+            <option value="roboto">Roboto</option>
+        </select>
+        <select>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+        </select>
+        <span class="material-icons">
+            format_bold
+        </span>
+        <span class="material-icons">
+            format_italic
+        </span>
+        <span class="material-icons">
+            format_underlined
+        </span>
+        <span class="material-icons">
+            format_align_left
+        </span>
+        <span class="material-icons">
+            format_align_center
+        </span>
+        <span class="material-icons">
+            format_align_right
+        </span>
+    </div>
+    <div class="formula-action-container">
+        <input type="text" readonly class="address-bar">
+        <img class="formula-icon" src="https://img.icons8.com/ios/50/000000/formula-fx.png" alt="">
+        <!-- <div>
+            <span class="material-icons">
+                function
+            </span>
+        </div> -->
+        <input type="text" class="formula-bar">
+    </div>
     <div class="grid-container"></div>
-    <div class="sheet-action-container"></div>
+    <div class="sheet-action-container">
+        <div class="sheet-add-icon">
+            <span class="material-icons">
+                post_add
+            </span>
+        </div>
+        <div class="sheet-tab-container">
+            <div class="sheet-tab">Sheet 1</div>
+            <div class="sheet-tab">Sheet 1</div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
+
 </html>

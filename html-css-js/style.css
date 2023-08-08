@@ -7,26 +7,110 @@ body{
     margin: 0;
 }
 
+
+/* Page Actions */
 .page-action-container{
-    height: 3rem;
-    background-color: aquamarine  ;
+    height: 2.5rem;
+    background-color: #00ac47;
+    display: flex;
+    align-items: flex-end;
 }
 
-.cell-action-container{
-    height: 3rem;
-    background-color: bisque;
+.page-action{
+    margin: 0.5rem;
+    color: #f1f2f6;
 }
+
+
+/* Cell Properties Action */
+.cell-action-container{
+    height: 2.5rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+}
+
+.cell-action-container > * {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.cell-action-container > span {
+    cursor: pointer;
+}
+
+.cell-action-container > select{
+    padding: 0.2rem;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+/* Formula Actions */
 
 .formula-action-container{
     height: 2rem;
-    background-color: antiquewhite;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0 0.5rem;
 }
+
+.formula-action-container > *{
+    display: inline-block;
+}
+
+.formula-action-container > input{
+    border: none;
+    outline: none;
+    height: 70%;
+}
+
+.formula-icon{
+    width: 1rem;
+}
+
+.address-bar{
+    width: 5rem;
+}
+
+.formula-bar{
+    width: calc(100vw - 1.4rem - 1rem - 1rem - 5rem);
+}
+
+/* Sheet Actions */
 
 .sheet-action-container{
-    height: 3rem;
-    background-color: rgb(119, 124, 124);
+    height: 2.5rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
 }
 
+.sheet-tab-container{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sheet-tab{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.sheet-add-icon{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+
+/* Gridf Container   */
 .grid-container{
-    height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+    height: calc(100vh - 2.5rem - 2.5rem - 2rem - 2.5rem);
 }
