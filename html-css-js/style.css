@@ -113,4 +113,73 @@ body{
 /* Gridf Container   */
 .grid-container{
     height: calc(100vh - 2.5rem - 2.5rem - 2rem - 2.5rem);
+    position: relative;
+    overflow: auto;
+    /* width: 100vw; */
+}
+
+.top-left-square-box{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.left-row-address-container{
+    width: 1.5rem;
+    /* height: 10rem; */
+    display: block;
+    position: sticky;
+    top: 1.5rem;
+    left: 0;
+    z-index: 1;
+    background-color: #ecf0f1;
+}
+
+.row-address{
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dcdcdc;
+}
+
+.cell-container{
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    /* height: auto; */
+}
+
+.top-col-address-container{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 1.5rem;
+    z-index: 1;
+    background-color: #ecf0f1;
+}
+
+.col-address{
+    height: 1.5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dcdcdc;
+}
+
+.cell-row{
+    display: flex;
+}
+
+.cell {
+    border: 1px solid #dcdcdc;
+    height: 1.5rem;
+    width: 5rem;
+    outline: none;
 }
