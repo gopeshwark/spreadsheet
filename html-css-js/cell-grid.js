@@ -27,6 +27,10 @@ for (let i = 0; i < rows; i++) {
         let cell = document.createElement("div");
         cell.setAttribute("class", "cell")
         cell.setAttribute("contenteditable", "true")
+        cell.setAttribute("spellcheck", "false");
+        // Attributes for cell and storage identification
+        cell.setAttribute("rid", i);
+        cell.setAttribute("cid", j);
         rowContainer.appendChild(cell);
         addListnerForAddress(cell, i, j);
 
@@ -41,3 +45,8 @@ function addListnerForAddress(cell, i, j) {
         addressBar.value = `${colId}${rowId}`
     })
 }
+
+
+// Set default first cell selected via DOM
+let firstCell = document.querySelector(".cell");
+firstCell.click(); 

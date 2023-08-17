@@ -27,37 +27,49 @@
         <span class="material-icons">
             content_paste
         </span>
-        <select>
+        <select class="font-family">
             <option value="arial">Arial</option>
             <option value="times new roman">Times New Roman</option>
             <option value="cambria">Cambria</option>
             <option value="roboto">Roboto</option>
         </select>
-        <select>
+        <select class="font-size">
             <option value="12">12</option>
             <option value="14">14</option>
             <option value="16">16</option>
             <option value="18">18</option>
             <option value="20">20</option>
         </select>
-        <span class="material-icons">
+        <span class="material-icons bold">
             format_bold
         </span>
-        <span class="material-icons">
+        <span class="material-icons italic">
             format_italic
         </span>
-        <span class="material-icons">
+        <span class="material-icons underline">
             format_underlined
         </span>
-        <span class="material-icons">
+        <span class="left material-icons alignment">
             format_align_left
         </span>
-        <span class="material-icons">
+        <span class="center material-icons alignment">
             format_align_center
         </span>
-        <span class="material-icons">
+        <span class="right material-icons alignment">
             format_align_right
         </span>
+        <div class="color-pick">
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" class="font-color">
+        </div>
+        <div class="color-pick">
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" class="bg-color">
+        </div>
     </div>
     <div class="formula-action-container">
         <input type="text" readonly class="address-bar">
@@ -82,7 +94,8 @@
             <div class="sheet-tab">Sheet 1</div>
         </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./cell-grid.js"></script>
+    <script src="./cell-properties.js"></script>
 </body>
 
 </html>
